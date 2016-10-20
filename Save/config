@@ -1,0 +1,35 @@
+[General]
+train_data = ./all_data/train_data
+val_data = ./all_data/train_data
+test_data = ./all_data/train_data
+vocab_path = ./all_data/vocab
+id2tag_path = ./all_data/id2tag.txt
+embed_path = ./all_data/embed/embedding.
+single_label = True
+cnn_after_embed = True
+predict_activation = softmax
+neural_model = lstm_basic
+pre_trained = False
+word_level = False
+vocab_size = 100000
+batch_size = 64
+embed_size = 100
+max_epochs = 1000
+early_stopping = 100
+dropout = 1.0
+lr = 0.03
+decay_epoch = 4.0
+decay_rate = 0.95
+class_num = 0
+reg = 0.0
+num_steps = 100
+
+[lstm]
+hidden_size = 60
+rnn_numlayers = 1
+
+[cnn]
+num_filters = 128
+filter_sizes = [3, 4, 5]
+cnn_numlayers = 1
+
